@@ -1,8 +1,8 @@
 import {MongoClient, ServerApiVersion, Db} from 'mongodb';
 // const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const uri = process.env.MONGO_URI || "mongodb+srv://chintankanhed:Chintan123@cluster0.rl0ec1t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const dbName = process.env.DB_NAME || "invoice-app";
+const uri = process.env.MONGO_URI || " ";
+const dbName = process.env.DB_NAME || " ";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -45,3 +45,4 @@ export async function getDbClient(): Promise<Db> {
 //   }
 //   return conn;
 // }
+
